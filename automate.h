@@ -19,7 +19,6 @@ public:
    void fin(Symbole *s, Etat *e);
    bool calculate();
 
-   // todo: méthodes popSymboles
 public:
    stack<Etat *> etats;
    stack<Symbole *> symboles;
