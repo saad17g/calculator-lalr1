@@ -38,6 +38,8 @@ bool Automate::calculate()
     while (nextState)
     {
         Symbole *s = lexer->Consulter();
+        s->Affiche();
+        cout << endl;
         nextState = !etats.top()->transition(*this, s);
     }
 

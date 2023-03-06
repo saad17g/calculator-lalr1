@@ -135,6 +135,7 @@ bool E6::transition(Automate &automate, Symbole *s)
         break;
     case CLOSEPAR:
         automate.decalage(s, new E9);
+        break;
     default:
         automate.decalage(new Symbole(ERREUR), NULL);
         return true;
